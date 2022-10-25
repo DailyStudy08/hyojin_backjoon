@@ -9,7 +9,7 @@ use = []
 for i in operation.keys() :
     use.extend([i]*operation[i])
 
-min_value, max_value = 1000000000, 0
+min_value, max_value = 1000000000, -1000000000
 for i in permutations(use, N-1):
     sum = arr[0]
     for j in range(1, N):
